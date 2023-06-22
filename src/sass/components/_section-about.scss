@@ -1,0 +1,36 @@
+.section-about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &-title {
+    font-size: map-get($font-sizes, xxxxl);
+    animation: aboutText 1s;
+    animation-delay: 100ms;
+  }
+
+  &-text {
+    font-size: map-get($font-sizes, xl);
+    width: 50%;
+    animation: aboutText 1s;
+    animation-delay: 1s;
+  }
+
+  &-img {
+    width: 20%;
+    height: auto;
+    transform: rotateY(180deg) rotateZ(-10deg) translateX(-200%) translateY(-10%);
+  }
+}
+
+@keyframes aboutText {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  font-size: 1.6rem;
+  color: map-get($colors, dark);
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  padding-inline: 12%;
+}
+
+.section {
+  padding-block: 10rem;
+}

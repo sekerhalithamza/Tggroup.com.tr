@@ -8,10 +8,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <a href="/" class="header-logo"
+        ><img src="assets/T_G-logo.webp" alt="T&G GROUP" class="header-logo-src"
+      /></a>
+      <a href="#about" class="header-link">Hakkımızda</a>
+      <a href="#media" class="header-link">Basında Biz</a>
+      <a href="#brands" class="header-link">Markalar</a>
+      <a href="#contact" class="header-link">İletişim</a>
+    </header>
+    <main class="main">
+      <section class="section section-hero">
+        <img src="assets/section-hero-img.webp" alt="Section Hero Image" class="section-hero-img" />
+        <div class="section-hero__content">
+          <h2 class="section-hero__content-title">
+            Welcome to <span class="section-hero__content-title--companyName">T&G Group</span>
+          </h2>
+          <p class="section-hero__content-text">
+            T&G Group is a leading global conglomerate committed to delivering innovative solutions
+            in various industries. With a rich history spanning over decades, we have built a strong
+            reputation for excellence, reliability, and customer satisfaction.
+          </p>
+        </div>
+      </section>
+      <section class="section section-about" id="about">
+        <h2 class="section-about-title aboutElements">Hakkımızda</h2>
+        <p class="section-about-text aboutElements">
+          At T&G Group, we specialize in leveraging cutting-edge technologies and industry expertise
+          to provide our clients with top-notch products and services. Our diverse portfolio
+          encompasses sectors such as technology, healthcare, energy, and consumer goods.
+        </p>
+        <img
+          src="assets/section-about-img.webp"
+          alt="T&G GROUP ICON"
+          class="section-about-img aboutElements" />
+      </section>
+      <section class="section section-media"></section>
+      <section class="section section-brands">
+        <h2>Markalar</h2>
+        <div class="section-brands-wrapper">
+          <img src="assets/geoline.png" alt="Geoline logo" />
+          <img src="assets/neokanvas.png" alt="Neokanvas logo" />
+          <img src="assets/prelogo.png" alt="T&G PR Event logo" />
+          <img src="assets/neoled.png" alt="Neoled logo" />
+          <img src="assets/neodigital.png" alt="Neodigital logo" />
+          <img src="assets/neoseaport.png" alt="Neoseaport logo" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__contact-wrapper">
+        <h2>Şube</h2>
+        <div class="footer__contact__list-wrapper">
+          <div class="footer__contact__list">
+            <div class="footer__contact__list-item">
+              <svg class="footer__contact__list-item__icon">
+                <use xlink:href="./assets/icon/sprite.svg#phone"></use>
+              </svg>
+              <a href="tel:+902122752575">+90 (212) 275 25 75</a>
+            </div>
+
+            <div class="footer__contact__list-item">
+              <svg class="footer__contact__list-item__icon">
+                <use xlink:href="assets/icon/sprite.svg#mail"></use>
+              </svg>
+              <a href="mailto:info@tggroup.com.tr">E-posta: info@tggroup.com.tr</a>
+            </div>
+            <div class="footer__contact__list-item">
+              <svg class="footer__contact__list-item__icon">
+                <use xlink:href="assets/icon/sprite.svg#location"></use>
+              </svg>
+              <a href="https://goo.gl/maps/3wyHNfnmcBHScdhJ9"
+                >Cemal Sahir Cad. Kral Ap. No:17 /D Mecidiyeköy - İSTANBUL / TURKEY
+              </a>
+            </div>
+          </div>
+          <div class="footer__contact__icon-list">
+            <svg class="footer__contact__icon-list__item-svg">
+              <use xlink:href="assets/icon/sprite.svg#instagram"></use>
+            </svg>
+            <svg class="footer__contact__icon-list__item-svg">
+              <use xlink:href="assets/icon/sprite.svg#twitter"></use>
+            </svg>
+            <svg class="footer__contact__icon-list__item-svg">
+              <use xlink:href="assets/icon/sprite.svg#facebook"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
