@@ -1,0 +1,13 @@
+.section-contact {
+  margin-bottom: 3rem;
+  &__map {
+    transform: scale(0.8);
+    outline: 10px solid map-get($colors, primary);
+    outline-offset: 10px;
+    margin-bottom: 3rem;
+    transition: all 350ms ease;
+  }
+  &__map:hover {
+    transform: scale(1);
+  }
+}
