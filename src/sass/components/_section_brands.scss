@@ -6,10 +6,16 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
+
+  &-title {
+    font-size: map-get($font-sizes, xxxxl);
+    font-weight: map-get($font-weights, semi-bold);
+  }
+
   &__wrapper {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20rem;
     row-gap: 10rem;
 
@@ -19,7 +25,17 @@
       outline: none;
       transition: all 500ms ease;
 
-      &:hover {
+      &:nth-child(even) {
+        transform: translateY(7rem);
+
+        &:hover {
+          transform: translateY(7rem) scale(1.2);
+          outline: 1rem map-get($colors, accent) solid;
+          outline-offset: 1rem;
+        }
+      }
+
+      &:nth-child(odd):hover {
         transform: scale(1.2);
         outline: 1rem map-get($colors, accent) solid;
         outline-offset: 1rem;
