@@ -1,36 +1,23 @@
 .section-about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
 
-  &-title {
-    font-size: map-get($font-sizes, xxxxl);
-    animation: aboutText 1s;
-    animation-delay: 100ms;
-  }
-
-  &-text {
-    font-size: map-get($font-sizes, xl);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     width: 50%;
-    animation: aboutText 1s;
-    animation-delay: 1s;
-  }
 
-  &-img {
-    width: 20%;
-    height: auto;
-    transform: rotateY(180deg) rotateZ(-10deg) translateX(-200%) translateY(-10%);
-  }
-}
+    &-title {
+      font-size: map-get($font-sizes, xxxl);
+      font-weight: map-get($font-weights, semi-bold);
+    }
 
-@keyframes aboutText {
-  0% {
-    opacity: 0;
-    transform: translateX(-10%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+    &-text {
+      font-size: map-get($font-sizes, xl);
+    }
   }
 }
