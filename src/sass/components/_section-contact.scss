@@ -1,5 +1,12 @@
 .section-contact {
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &-title {
+    font-size: map-get($font-sizes, xxxxl);
+    font-weight: map-get($font-weights, semi-bold);
+    text-align: center;
+  }
   &__map {
     transform: scale(0.8);
     outline: 10px solid map-get($colors, primary);
