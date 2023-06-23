@@ -5,7 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 10rem;
+  padding-block-end: 40rem;
 
   &-title {
     font-size: map-get($font-sizes, xxxxl);
@@ -13,6 +14,7 @@
   }
 
   &__wrapper {
+    width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,16 +22,17 @@
     row-gap: 10rem;
 
     &-items {
-      width: 100%;
+      width: 90%;
       height: auto;
       outline: none;
       transition: all 500ms ease;
+      border: 0.1rem map-get($colors, dark) solid;
 
       &:nth-child(even) {
-        transform: translateY(7rem);
+        transform: translateY(25rem);
 
         &:hover {
-          transform: translateY(7rem) scale(1.2);
+          transform: translateY(25rem) scale(1.2);
           outline: 1rem map-get($colors, accent) solid;
           outline-offset: 1rem;
         }
