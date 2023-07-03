@@ -36,6 +36,12 @@
           stroke: white;
         }
       }
+
+      &__item {
+        width: auto;
+        height: fit-content;
+      }
+
       &__item-svg {
         fill: map-get($colors, light);
         width: 3rem;
