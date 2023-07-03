@@ -20,10 +20,15 @@
         display: inline-flex;
         height: min-content;
         gap: 2rem;
+        align-items: center;
         &__icon {
           width: 3rem;
           height: 3rem;
           fill: map-get($colors, light);
+        }
+        a {
+          width: 70%;
+          word-wrap: break-word;
         }
       }
     }

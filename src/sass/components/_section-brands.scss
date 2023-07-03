@@ -7,6 +7,7 @@
   justify-content: center;
   gap: 10rem;
   padding-block-end: 40rem;
+  overflow: visible;
 
   &-title {
     font-size: map-get($font-sizes, xxxxl);
@@ -20,13 +21,14 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 20rem;
     row-gap: 10rem;
+    overflow: visible;
 
     &-items {
       width: 90%;
       height: auto;
       outline: none;
       transition: all 500ms ease;
-      border: 0.1rem map-get($colors, dark) solid;
+      border: 0.3rem map-get($colors, accent) solid;
 
       &:nth-child(even) {
         transform: translateY(25rem);
@@ -35,6 +37,7 @@
           transform: translateY(25rem) scale(1.2);
           outline: 1rem map-get($colors, accent) solid;
           outline-offset: 1rem;
+          border: none;
         }
       }
 
@@ -42,6 +45,7 @@
         transform: scale(1.2);
         outline: 1rem map-get($colors, accent) solid;
         outline-offset: 1rem;
+        border: none;
       }
     }
   }

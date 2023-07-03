@@ -20,4 +20,8 @@
       font-size: map-get($font-sizes, xl);
     }
   }
+
+  &-img {
+    width: 30rem;
+  }
 }

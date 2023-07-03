@@ -5,6 +5,7 @@
   border: none;
   outline: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
   min-height: 100vh;
   font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
