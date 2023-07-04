@@ -1,0 +1,37 @@
+.section-about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: map-get($colors, light);
+  padding-inline: 10rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+
+    &-title {
+      color: map-get($colors, primary-light);
+      font-size: map-get($font-sizes, xxl);
+      font-weight: map-get($font-weights, semi-bold);
+    }
+
+    &-text {
+      color: map-get($colors, dark);
+      font-size: map-get($font-sizes, l);
+      font-weight: map-get($font-weights, medium);
+    }
+
+    &:nth-child(odd) {
+      align-self: flex-start;
+      text-align: left;
+    }
+
+    &:nth-child(even) {
+      align-self: flex-end;
+      text-align: right;
+    }
+  }
+}

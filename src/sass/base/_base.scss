@@ -22,3 +22,17 @@ body {
   color: map-get($colors, dark);
   font-family: "Montserrat", sans-serif;
 }
+
+.section {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}

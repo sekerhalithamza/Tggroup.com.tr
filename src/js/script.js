@@ -1,6 +1,5 @@
 "use strict";
-const aboutElements = document.getElementsByClassName("aboutElements");
 
-function startAnimation(entries, observer) {
-  entries.forEach((entry) => {});
-}
+const languageBtn = document.getElementById("headerBtn");
+
+languageBtn.addEventListener("click");
