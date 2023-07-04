@@ -1,0 +1,44 @@
+.section-brands {
+  padding-block: 5rem;
+  padding-inline: 15rem;
+  background-color: map-get($colors, light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row;
+    }
+
+    &-content {
+      &--title {
+        margin-block-end: 2rem;
+      }
+
+      &--text {
+        font-size: map-get($font-sizes, l);
+      }
+      width: 50%;
+    }
+
+    &-img {
+      width: fit-content;
+      height: fit-content;
+
+      &--src {
+        width: 50rem;
+        height: auto;
+      }
+    }
+  }
+}

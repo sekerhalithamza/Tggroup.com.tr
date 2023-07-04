@@ -20,5 +20,20 @@
         <symbol id="facebook" viewBox="0 0 32 32">
             <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
         </symbol>
+        <symbol id="home" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 16.0556L25 2L48 16.0556" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M42.8889 25V41.3556C42.8889 42.2025 42.2024 42.8889 41.3555 42.8889H8.64442C7.79758 42.8889 7.11108 42.2025 7.11108 41.3556V25" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="sun" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36Z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M43.9998 24.0001H45.9998" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24 4V2" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24 46V44" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M39.9998 40.0001L37.9998 38.0001" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M39.9998 7.99994L37.9998 9.99994" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 40.0001L10 38.0001" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 7.99994L10 9.99994" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 24.0001H4" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
     </defs>
 </svg>

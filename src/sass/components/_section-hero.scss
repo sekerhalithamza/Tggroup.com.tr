@@ -1,10 +1,7 @@
 .section-hero {
+  position: relative;
   height: 100vh;
-  background-image: linear-gradient(
-      rgba(map-get($colors, dark), 0.4),
-      rgba(map-get($colors, dark), 0.4)
-    ),
-    url(/assets/section-hero.webp);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/home.webp);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,8 +12,6 @@
   padding-inline: 5rem;
 
   &-title {
-    color: map-get($colors, primary);
-    font-size: map-get($font-sizes, xxxxl);
     margin-block-end: 3rem;
   }
 
@@ -26,5 +21,45 @@
     font-size: map-get($font-sizes, xl);
     width: 40%;
     align-self: flex-end;
+  }
+
+  &__list {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    gap: 1rem;
+    flex-direction: column;
+
+    .active-item {
+      border: 0.3rem solid red;
+      border-radius: 3rem;
+      p {
+        display: block;
+      }
+    }
+
+    &-item {
+      padding-block: 1rem;
+      padding-inline: 2rem;
+      font-size: map-get($font-sizes, xl);
+      color: map-get($colors, light);
+      font-weight: map-get($font-weights, medium);
+      align-items: center;
+      display: flex;
+      gap: 2rem;
+      p {
+        display: none;
+      }
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
+      &:hover {
+        p {
+          display: block;
+        }
+        cursor: pointer;
+      }
+    }
   }
 }
