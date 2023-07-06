@@ -5,7 +5,9 @@ const listItems = document.getElementsByClassName("section-hero__list-item");
 const sectionHero = document.getElementById("sectionHero");
 const textElements = document.getElementsByClassName("text");
 const gallery = document.getElementById("gallery");
-const chevronBtns = document.getElementsByClassName("section-references--chevron");
+const chevronBtns = document.getElementsByClassName(
+  "section-references--chevron"
+);
 
 for (let item of listItems) {
   item.addEventListener("click", function () {
@@ -40,10 +42,10 @@ for (let btn of chevronBtns) {
     if (direction === "right")
       if (galleryPosition <= -300) {
         galleryPosition *= -1;
-      } else galleryPosition -= 20;
+      } else galleryPosition -= 25;
     else if (galleryPosition >= 300) {
       galleryPosition *= -1;
-    } else galleryPosition += 20;
+    } else galleryPosition += 25;
     gallery.style.transform = `translateX(-50%) translateY(-50%) translateX(${galleryPosition}vw)`;
   });
 }
