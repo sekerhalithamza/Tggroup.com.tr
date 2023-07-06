@@ -1,0 +1,63 @@
+.section-contact {
+  height: 83vh;
+  background-color: map-get($colors, primary-light-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &--title {
+    color: map-get($colors, accent);
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      text-align: center;
+
+      &--title {
+        color: map-get($colors, light);
+      }
+
+      &__list {
+        list-style: none;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &-item {
+          height: fit-content;
+          width: fit-content;
+
+          &-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            color: map-get($colors, light);
+            text-decoration: none;
+
+            span {
+              font-weight: map-get($font-weights, semi-bold);
+              margin-inline-end: 1rem;
+            }
+
+            svg {
+              height: 5rem;
+              width: fit-content;
+              stroke: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

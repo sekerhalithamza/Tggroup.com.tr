@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-inline: 2rem;
 
   &__list {
     display: flex;
@@ -30,5 +31,6 @@
     flex-direction: column;
     justify-content: end;
     color: map-get($colors, light);
+    align-self: center;
   }
 }

@@ -54,4 +54,9 @@
       background-color: map-get($colors, primary-light);
     }
   }
+
+  &-logo-src {
+    height: 8vh;
+    width: auto;
+  }
 }

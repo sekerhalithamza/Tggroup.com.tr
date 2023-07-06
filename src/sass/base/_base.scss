@@ -46,5 +46,5 @@ body {
 .heading-secondary {
   color: map-get($colors, primary-light);
   font-size: map-get($font-sizes, xxxl);
-  font-weight: map-get($font-weights, semi-bold);
+  font-weight: map-get($font-weights, bold);
 }

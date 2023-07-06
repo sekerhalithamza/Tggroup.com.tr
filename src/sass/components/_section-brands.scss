@@ -1,19 +1,26 @@
 .section-brands {
   padding-block: 5rem;
-  padding-inline: 15rem;
   background-color: map-get($colors, light);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
 
   &__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-block: 7rem;
+    padding-inline: 15rem;
 
     &:nth-child(odd) {
       flex-direction: row-reverse;
       text-align: right;
+      background-color: map-get($colors, primary-light-2);
+      color: map-get($colors, light);
+
+      .section-brands__container-content--title {
+        color: map-get($colors, accent);
+      }
     }
 
     &:nth-child(even) {
@@ -27,6 +34,7 @@
 
       &--text {
         font-size: map-get($font-sizes, l);
+        font-weight: map-get($font-weights, semi-bold);
       }
       width: 50%;
     }
