@@ -57,8 +57,24 @@
         }
     }
 
+    .section-about {
+        height: 90vh;
+    }
     .section-about__container {
         padding-inline: 8rem;
+    }
+    .section-brands__container {
+        flex-direction: column !important;
+    }
+    .section-brands__container-content {
+        width: 80%;
+    }
+    .section-brands__container-content--title, .section-brands__container-content--text {
+        text-align: center;
+    }
+
+    .section-brands__container-content--text {
+        margin-bottom: 2rem;
     }
 }
 
