@@ -9,7 +9,7 @@
   align-items: center;
   height: 10vh;
   box-shadow: 0 0.2rem 0.5rem lighten(map-get($colors, dark), 10%);
-  z-index: 5;
+  z-index: 10;
   background-color: map-get($colors, light);
 
   &__list {

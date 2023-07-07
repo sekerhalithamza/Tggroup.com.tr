@@ -15,11 +15,11 @@
     &:nth-child(odd) {
       flex-direction: row-reverse;
       text-align: right;
-      background-color: map-get($colors, primary-light-2);
-      color: map-get($colors, light);
+      background-color: map-get($colors, accent);
+      color: map-get($colors, dark);
 
       .section-brands__container-content--title {
-        color: map-get($colors, accent);
+        color: map-get($colors, primary);
       }
     }
 

@@ -28,16 +28,16 @@
     &:nth-child(even) {
       align-self: flex-end;
       text-align: right;
-      background-color: map-get($colors, primary-light-2);
+      background-color: map-get($colors, accent);
 
       .section-about__container-text {
         text-align: right;
         align-self: flex-end;
-        color: map-get($colors, light);
+        color: map-get($colors, dark);
       }
 
       .section-about__container-title {
-        color: map-get($colors, accent);
+        color: map-get($colors, primary);
       }
     }
   }

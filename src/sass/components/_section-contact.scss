@@ -1,13 +1,14 @@
 .section-contact {
   height: 83vh;
-  background-color: map-get($colors, primary-light-2);
+  background-color: map-get($colors, accent);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding-inline: 5rem;
 
   &--title {
-    color: map-get($colors, accent);
+    color: map-get($colors, dark);
   }
 
   &__container {
@@ -19,11 +20,12 @@
     &-content {
       display: flex;
       flex-direction: column;
-      width: 50%;
-      text-align: center;
+      width: fit-content;
+      gap: 2rem;
 
       &--title {
-        color: map-get($colors, light);
+        color: map-get($colors, dark);
+        text-align: center;
       }
 
       &__list {
@@ -38,21 +40,21 @@
           width: fit-content;
 
           &-link {
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-start;
-            color: map-get($colors, light);
+            color: map-get($colors, dark);
             text-decoration: none;
-
+            
             span {
               font-weight: map-get($font-weights, semi-bold);
-              margin-inline-end: 1rem;
-            }
+              }
 
             svg {
               height: 5rem;
-              width: fit-content;
+              width: auto;
+              aspect-ratio: 1/1;
               stroke: transparent;
             }
           }
