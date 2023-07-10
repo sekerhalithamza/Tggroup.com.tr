@@ -26,7 +26,7 @@
       &:nth-child(5) {
         .footer__list-item--link svg {
           fill: transparent;
-          stroke-width: 0.6rem;
+          stroke-width: 0.2rem;
           stroke: map-get($colors, light);
         }
       }
@@ -40,8 +40,9 @@
 
         svg {
           display: inline-block;
-          height: 100%;
-          width: 100%;
+          aspect-ratio: 1/1;
+          height: 3rem;
+          width: auto;
           fill: map-get($colors, light);
           stroke: transparent;
         }

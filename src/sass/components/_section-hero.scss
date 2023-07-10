@@ -56,8 +56,11 @@
         transition: all 0.2s ease;
       }
       svg {
-        width: 3rem;
+        aspect-ratio: 1/1;
         height: 3rem;
+        width: auto;
+        fill: map-get($colors, light);
+        stroke: map-get($colors, light);
       }
       &:hover {
         p {
