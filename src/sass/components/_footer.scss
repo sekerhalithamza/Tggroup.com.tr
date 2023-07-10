@@ -15,11 +15,21 @@
     width: fit-content;
     gap: 1rem;
     list-style: none;
+    align-items: center;
 
     &-item {
       width: auto;
-      height: 100%;
+      height: 70%;
       aspect-ratio: 1/1;
+
+      &:nth-child(2),
+      &:nth-child(5) {
+        .footer__list-item--link svg {
+          fill: transparent;
+          stroke-width: 0.6rem;
+          stroke: map-get($colors, light);
+        }
+      }
 
       &--link {
         display: inline-block;
@@ -30,8 +40,10 @@
 
         svg {
           display: inline-block;
-          height: 2.5rem;
-          width: 2.5rem;
+          height: 100%;
+          width: 100%;
+          fill: map-get($colors, light);
+          stroke: transparent;
         }
       }
     }

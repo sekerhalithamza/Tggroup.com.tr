@@ -46,16 +46,17 @@
             align-items: center;
             color: map-get($colors, dark);
             text-decoration: none;
-            
+
             span {
               font-weight: map-get($font-weights, semi-bold);
-              }
+            }
 
             svg {
               height: 5rem;
               width: auto;
               aspect-ratio: 1/1;
               stroke: transparent;
+              fill: map-get($colors, dark);
             }
           }
         }
