@@ -5,9 +5,7 @@ const listItems = document.getElementsByClassName("section-hero__list-item");
 const sectionHero = document.getElementById("sectionHero");
 const textElements = document.getElementsByClassName("text");
 const gallery = document.getElementById("gallery");
-const chevronBtns = document.getElementsByClassName(
-  "section-references--chevron"
-);
+const chevronBtns = document.getElementsByClassName("section-references--chevron");
 
 for (let item of listItems) {
   item.addEventListener("click", function () {
@@ -49,3 +47,7 @@ for (let btn of chevronBtns) {
     gallery.style.transform = `translateX(-50%) translateY(-50%) translateX(${galleryPosition}vw)`;
   });
 }
+
+window.setInterval(() => {
+  chevronBtns[1].click();
+}, 2000);
