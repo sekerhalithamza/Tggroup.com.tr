@@ -51,6 +51,13 @@
       gap: 2rem;
       transition: all 0.4s ease;
 
+      &:nth-child(1) {
+        svg {
+          fill: transparent;
+          stroke-width: 0.4rem;
+          stroke: map-get($colors, light);}
+      }
+
       p {
         opacity: 0;
         transition: all 0.2s ease;
